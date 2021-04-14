@@ -21,4 +21,13 @@ public class StudentController {
     Student createStudent(@RequestBody Student student) {
         return studentRepository.save(student);
     }
+
+    @PutMapping("courseId}/students/{studentId}")
+    void replaceStudent(@RequestBody Student newStudent, @PathVariable Long id) {
+
+    }
+    @DeleteMapping("courseId}/students/{studentId}")
+    void deleteStudent(@PathVariable Long id) {
+
+    }
 }
